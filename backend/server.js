@@ -10,6 +10,7 @@ const port = process.env.PORT || 3001;
 const registerRoute = require('./routes/register');
 const loginRoute = require('./routes/login');
 const userRoute = require('./routes/user');
+const postRoute = require('./routes/post');
 
 // CONNECT TO DATABASE
 console.log(process.env.DB_CONNECT);
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use('/api', registerRoute);
 app.use('/api', loginRoute);
 app.use('/api', userRoute);
+app.use('/api', postRoute);
 
 // ADD WEBPAGE
 

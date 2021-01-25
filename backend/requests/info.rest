@@ -1,1 +1,26 @@
-GET https://localhost:3001/api/check 
+GET http://localhost:3001/api/check HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTRlODMyOTI0MWQ3NGE3OGU1NyJ9LCJpYXQiOjE2MTE1OTg1NTIsImV4cCI6MTYxMjIwMzM1Mn0.HRead_VS9S4rD4ExFwA8E1M8BolYHQXTGWVeBJeukss
+
+### GET SELF INFO
+GET http://localhost:3001/api/user HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTRlODMyOTI0MWQ3NGE3OGU1NyJ9LCJpYXQiOjE2MTE1OTg1NTIsImV4cCI6MTYxMjIwMzM1Mn0.HRead_VS9S4rD4ExFwA8E1M8BolYHQXTGWVeBJeukss
+Content-Type: application/json
+
+
+### GET OTHER INFO
+GET http://localhost:3001/api/user HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTRlODMyOTI0MWQ3NGE3OGU1NyJ9LCJpYXQiOjE2MTE1OTg1NTIsImV4cCI6MTYxMjIwMzM1Mn0.HRead_VS9S4rD4ExFwA8E1M8BolYHQXTGWVeBJeukss
+Content-Type: application/json
+
+{
+    "id": "600f12123e622c30a006b8b7A"
+}
+
+### MAKE POST
+POST http://localhost:3001/api/post HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTRlODMyOTI0MWQ3NGE3OGU1NyJ9LCJpYXQiOjE2MTE1OTg1NTIsImV4cCI6MTYxMjIwMzM1Mn0.HRead_VS9S4rD4ExFwA8E1M8BolYHQXTGWVeBJeukss
+Content-Type: application/json
+
+{
+    "text": "wassup"
+}
