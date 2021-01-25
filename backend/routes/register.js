@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const Users = require('../models/UserModel');
+const Relations = require('../models/RelationsModel');
 const registerValidation = require('../validation/registerValidation');
 const bcrypt = require('bcrypt');
 
@@ -23,8 +24,17 @@ router.post('/register', registerValidation, async (req, res) => {
 		password: hashedPassword,
 	});
 
+	// CREATE RELATION
+	const relations = new Relations({
+		user: user._id,
+	});
+
+	// ASSIGN RELATION TO USER
+	user.relations = relations._id;
+
 	try {
 		const savedUser = await user.save();
+		const savedRelations = relations.save();
 		res.send('New user created');
 	} catch (error) {
 		res.status(400).send(error);

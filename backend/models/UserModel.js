@@ -30,23 +30,8 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		default: '',
 	},
-	followers: {
-		type: [String],
-		required: true,
-		default: [],
-	},
-	following: {
-		type: [String],
-		required: true,
-		default: [],
-	},
-	followerCount: {
-		type: Number,
-		default: 0,
-	},
-	followingCount: {
-		type: Number,
-		default: 0,
+	relations: {
+		type: mongoose.Schema.Types.ObjectId,
 	},
 	bio: {
 		type: String,
