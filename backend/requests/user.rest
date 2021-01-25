@@ -1,0 +1,19 @@
+### REGISTER NEW USER
+POST http://localhost:3001/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "hi",
+    "username": "slayer4000",
+    "email": "will@gmail.com",
+    "password": "asdfasdf"
+}
+
+### LOGIN
+GET http://localhost:3001/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "account": "will@gmail.com",
+    "password": "asdfasdf"
+}

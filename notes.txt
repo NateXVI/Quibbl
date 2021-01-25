@@ -1,0 +1,26 @@
+Functionality:
+    -Can make new user
+    -Can login
+    -Can follow people
+    -Can post
+    -Can view own profile
+    -Can view others profile
+
+User Structure:
+    {
+        ObjectId: String         //public
+        name: String             //public
+        username: String         //public
+        email: String            //private
+        password: String         //private encrypted
+        date: Date               //private
+        profilePicture: String   //public
+        followers: [String]      //public
+        followerCount: Int       //public
+        following: [String]      //public
+        followingCount: Int      //public
+        bio: String              //public
+        posts: [String]          //public
+    }
+
+    MOVE FOLLOWER AND FOLLOWING INFORMATION TO ITS OWN DATASET
