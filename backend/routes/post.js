@@ -13,7 +13,7 @@ router.post('/post', validateToken, postValidation, async (req, res) => {
 
 	// ADD POST TO USER
 	req.user.posts.push(post._id);
-	res.send(req.user);
+	res.send('posted');
 
 	// SAVE POST AND USER
 	try {

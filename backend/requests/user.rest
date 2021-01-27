@@ -44,3 +44,12 @@ Content-Type: application/json
     "account": "slayer4000",
     "password": "asdfaAsdf"
 }
+
+### UPDATE BIO
+POST http://localhost:3001/api/bio HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTRlODMyOTI0MWQ3NGE3OGU1NyJ9LCJpYXQiOjE2MTE1OTg1NTIsImV4cCI6MTYxMjIwMzM1Mn0.HRead_VS9S4rD4ExFwA8E1M8BolYHQXTGWVeBJeukss
+Content-Type: application/json
+
+{
+    "text": "ni xihuan chi pigu"
+}

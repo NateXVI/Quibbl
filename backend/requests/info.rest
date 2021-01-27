@@ -13,7 +13,7 @@ auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTR
 Content-Type: application/json
 
 {
-    "id": "600f12123e622c30a006b8b7A"
+    "id": "600f12123e622c30a006b8b7"
 }
 
 ### MAKE POST
@@ -22,5 +22,24 @@ auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTR
 Content-Type: application/json
 
 {
-    "text": "wassup"
+    "text": "bababoui"
+}
+
+### FOLLOW USER
+POST http://localhost:3001/api/follow HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGYxMjEyM2U2MjJjMzBhMDA2YjhiNyJ9LCJpYXQiOjE2MTE2NDQ2ODcsImV4cCI6MTYxMjI0OTQ4N30.d0dGhF5gLy4TMg41Z6uODPiTaElNRYS0IiovyYe0lKI
+Content-Type: application/json
+
+{
+    "id": "600ef94e8329241d74a78e57"
+}
+
+
+### UNFOLLOW USER
+POST http://localhost:3001/api/unfollow HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGVmOTRlODMyOTI0MWQ3NGE3OGU1NyJ9LCJpYXQiOjE2MTE1OTg1NTIsImV4cCI6MTYxMjIwMzM1Mn0.HRead_VS9S4rD4ExFwA8E1M8BolYHQXTGWVeBJeukss
+Content-Type: application/json
+
+{
+    "id": "600f12123e622c30a006b8b7"
 }

@@ -6,7 +6,7 @@ const validateToken = require('../validation/validateToken');
 const validator = require('validator');
 const jwt = require('jsonwebtoken');
 
-router.get('/login', loginValidation, async (req, res) => {
+router.post('/login', loginValidation, async (req, res) => {
 	// CHECK IF USERNAME OR EMAIL
 	const isEmail = validator.isEmail(req.body.account);
 
@@ -29,7 +29,7 @@ router.get('/login', loginValidation, async (req, res) => {
 		{ expiresIn: '7d' }
 	);
 
-	res.send('logged in ' + token);
+	res.send(token);
 });
 
 router.get('/check', validateToken, async (req, res) => {

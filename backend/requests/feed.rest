@@ -1,0 +1,8 @@
+GET http://localhost:3001/api/feed HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwMGYxMjEyM2U2MjJjMzBhMDA2YjhiNyJ9LCJpYXQiOjE2MTE2NDQ2ODcsImV4cCI6MTYxMjI0OTQ4N30.d0dGhF5gLy4TMg41Z6uODPiTaElNRYS0IiovyYe0lKI
+Content-Type: application/json
+
+{
+    "limit": 1,
+    "date": "2021-01-26T02:39:51.897Z"
+}
